@@ -1,0 +1,50 @@
+The list is based on Alias' blog post every perl hacker MUST read: http://use.perl.org/~Alias/journal/38842
+
+list of serivces around perl and we should integrate with many of them somehow:
+
+* http://perl.org
+* http://cpan.org
+* http://www.perl.com
+* http://perl.oreilly.com
+* http://learn.perl.org
+* http://history.perl.org
+* http://search.cpan.org
+* http://cpanratings.perl.org
+* http://annocpan.org
+** May be interesting
+* http://dev.perl.org
+* http://rt.cpan.org
+** get list of bugs per module with some data, ruz can work on a stream for that
+*** partial implementationa
+** quick doc typo reporting and propagating back to tracker
+** auto-reports:
+*** missing pod, test with Test::Pod
+*** hard dependency on a Test::* modules
+* http://rt.perl.org/perlbug/
+* http://dbi.perl.org
+* http://perl.apache.org
+* http://www.yapc.org
+* http://www.pm.org
+* http://perldoc.perl.org
+** use it for docs references?
+* http://faq.perl.org
+* http://www.nntp.perl.org
+* http://lists.cpan.org
+* http://www.theperlreview.com
+* http://perlcast.com
+* http://perlmonks.org
+* http://planet.perl.org
+* http://use.perl.org
+* https://donate.perlfoundation.org
+* http://news.perlfoundation.org
+* http://www.cpantesters.org
+** some simple matrix, auto-classification
+* http://cpants.perl.org
+* http://bookmarks.cpan.org
+* http://svn.perl.org
+* http://www.cpanforum.com/
+** grab discussions
+
+
+Here is design that can (should?) be used http://wardley.org/use.perl.org/test.html
+london.pm is nice two: http://london.pm.org/

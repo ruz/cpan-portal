@@ -7,4 +7,17 @@ parse change log files, may be that will help normalize changelogs on cpan
 * integration with RT
 ** open bugs, resolved, rejected
 
+* relations between modules
+** alternative
+*** when modules declared as alternative, we can notify every author of a module
+    that depends on any of alternatives to comment which one they prefer and why
+
+* relations should allow external URLs, for example Jifty is used in Doxory
+
+* we should check and complain about an author that mandatorly depend on Test::*
+  modules
+
+* if there is no repository declared in the META, we can allow users to define a
+  repository and file bug in rt.cpan.org
+
 
