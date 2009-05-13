@@ -1,0 +1,136 @@
+* { margin: 0px; padding: 0px; }
+img { border: 0px; }
+
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+div#mainWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 6px;
+}
+
+div#siteWrapper {
+    position: relative;
+    width: 860px;
+    /*border: 1px solid #CCC;*/
+    margin: auto;
+    text-align: left;
+}
+
+div#top {
+    height: 91px;
+    background: url(/static/images/top_bg.jpg) no-repeat;
+}
+
+div#top div#logo {
+    position: absolute;
+    right: 153px; top: 59px;
+}
+div#top div#logo img { border: 0px; }
+
+#top-links ul {
+    position: absolute; clear: both;
+    left: 62px; top: 59px;
+    line-height: 38px; height: 38px;
+}
+#top-links ul li {
+    float: left;
+    padding: 0 0 0 30px;
+    text-align: left;
+    list-style-type: none;
+    background: url(/static/images/b_little_top.gif) 10px 15px no-repeat;
+}
+#top-links a {
+    color: #FFFFFF;
+    vertical-align: 50%;
+}
+
+div#content {
+    float: left;
+    margin-top: 6px;
+    width: 100%;
+    background-color: #F1F1F1;
+    /*padding-top: 40px;*/
+}
+
+div#wrapper {
+    float: left;
+    width: 100%;
+    margin-left: -300px;
+}
+
+div#wrapper div#left-column {
+    position: relative;
+    margin-left: 300px;
+    padding-left: 17px;
+    padding-right: 10px;
+}
+
+div#rightMainCol {
+    float: right;
+    position: relative;
+    width: 300px;
+}
+
+h1.title { color: #BDD158; }
+
+div.std-block {
+    position: relative;
+    background-color: #FFFFFF;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    margin-top: 2em;
+}
+
+div#wrapper div#left-column div.std-block {
+    margin-left: 17px;
+}
+
+div.std-block h2 {
+    position: relative;
+    top: -1.4em;
+    left: -17px;
+    color: #AC4C4C;
+}
+div.std-block h2 ul {
+    display: inline;
+    vertical-align:2px;
+    list-style-type: none;
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+div.std-block h2 ul li {
+    display: inline;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    border-left: solid 1px #B8B8B8;
+}
+div.std-block h2 ul a         { font-size: 100%; }
+div.std-block h2 ul a:link    { color: #B8B8B8; }
+div.std-block h2 ul a:hover   { color: #B86D6D; }
+div.std-block h2 ul a:visited { color: #B8B8B8; }
+
+a {
+    font-family: Tahoma;
+    font-size: 0.6em;
+}
+
+a:link { text-decoration: underline; }
+a:hover { text-decoration: none; }
+a:visited { text-decoration: underline; }
+
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1.0em; }
+

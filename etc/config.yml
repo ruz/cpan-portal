@@ -1,0 +1,63 @@
+--- 
+framework: 
+  ConfigFileVersion: 4
+
+  ApplicationClass: CpanPortal
+  ApplicationName: CpanPortal
+  ApplicationUUID: 3C21A588-D2E5-11DD-91FA-FC0F44A4CCFD
+
+  AdminMode: 0
+  DevelMode: 1
+  LogLevel: DEBUG
+
+  Database: 
+    AutoUpgrade: 1
+    CheckSchema: 1
+    Database: cpanportal
+    Driver: SQLite
+    Host: localhost
+    Password: ''
+    RecordBaseClass: Jifty::DBI::Record::Cachable
+    User: ''
+    Version: 0.0.1
+  L10N: 
+    PoDir: share/po
+
+  Mailer: Sendmail
+  MailerArgs: []
+
+  Plugins: 
+    - LetMe: {}
+    - REST: {}
+    - CompressedCSSandJS: {}
+    - ViewDeclarePage: {}
+    - Tag: {}
+
+  PubSub: 
+    Backend: Memcached
+    Enable: ~
+  SkipAccessControl: 1
+  TemplateClass: CpanPortal::View
+  View: 
+    FallbackHandler: Jifty::View::Declare::Handler
+    Handlers: 
+      - Jifty::View::Static::Handler
+      - Jifty::View::Declare::Handler
+  Web: 
+    BaseURL: http://localhost
+    DataDir: var/mason
+    Globals: []
+
+    MasonConfig: 
+      autoflush: 0
+      default_escape_flags: h
+      error_format: text
+      error_mode: fatal
+    Port: 8888
+    ServeStaticFiles: 1
+    StaticRoot: share/web/static
+    TemplateRoot: share/web/templates
+application:
+  CPAN:
+    mirror: 'http://cpan.rinet.ru/'
+    mini: var/minicpan

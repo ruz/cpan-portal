@@ -1,0 +1,10 @@
+parse change log files, may be that will help normalize changelogs on cpan
+
+* about people
+** parse changelogs for contributors
+** parse main file in distribution for authors, contributors
+
+* integration with RT
+** open bugs, resolved, rejected
+
+

@@ -1,0 +1,61 @@
+PurePerl or not?
+
+From http://use.perl.org/~autarch/journal/ :
+
+People want many things from software, and those desires are often contradictory. There's a constant back and forth about what people want from CPAN modules, in particular. It seems like we have the same arguments year after year. I think talking about priorities before talking about why something is good or bad is crucial.
+
+So what are these priorities? How do they work together? Which ones are contradictory? Which ones are most important to you, and when do the priorities shift?
+
+(Note: when I say library below, mentally substitute "module, library, distro, or framework")
+
+    *
+
+      Well-vetted - When looking for a library, you might want something other people have already used for a while. You want to know that it does what it says on the box, and that most of the big bugs have been found.
+    *
+
+      Cutting Edge - Some folks like to use new stuff. It's fun to experiment, and often the new stuff is the most advanced, most interesting, most time-saving. It could also be the biggest new piece of shit, the buggiest, slowest, etc.
+    *
+
+      Dependency free - The CPAN depdendency discussion never goes away. Some people really, really don't like large dependency chains. When you want to use a module as part of an app, and you want non Perl gurus to install that app, this becomes a huge issue. Telling them "just install these 100 modules from CPAN" doesn't cut it.
+    *
+
+      Small (does one thing) - Less code means less bugs. It also means less docs to read, and makes a library simpler to learn.
+    *
+
+      Easy to integrate - Some libraries are designed to be integrated with other modules (Catalyst), some want you to embrace their world (Jifty).
+    *
+
+      Complete - Some libraries come with a complete solution (Jifty) and some require you to put together a bunch of pieces into a whole (Catalyst).
+    *
+
+      Fast - Sometimes speed (of compilation and/or execution) really matter.
+    *
+
+      Memory frugal - Just like with speed, sometimes memory usage matters.
+    *
+
+      No XS - Sometimes you're stuck using a system where you can't compile anything. Or maybe you have a compiler, but the module requires external C libraries, and you can't install them (a hosted account).
+    *
+
+      Active development - Maybe you feel more comfortable knowing the module has a future, even if that means a higher rate of change.
+    *
+
+      Stable - On the other hand, maybe you want something that's just done, where you know new releases will be infrequent and backwards compatible.
+
+I'm sure there are more priorities (feel free to mention some in the comments). It's easy to say we want all of these things, but there are many, many conflicts here. I won't go into all of them, but here's a few examples.
+
+If you want well-vetted, you're not going to be using cutting edge code.
+
+If you want dependency free, that code is probably not well-vetted. That dependency free code probably has some reinvented wheels, and those wheels are probably less round than the dependency they avoid.
+
+If you want fast or memory frugal, you probably can't also insist on no XS. If you want complete solutions, than small and easy to integrate may go out the window.
+
+Personally, my top priorities are usually small, easy to integrate, and active development. I'd rather learn several small pieces and put them together than try to digest a big framework all at once. And I'd rather have an active community, even if I have to keep up with API changes.
+
+I don't care too much about fast or memory frugal. I work on a lot of webapps, which are often less demanding performance wise, at least if you can count on a dedicated server or two. Contrast this to a small "throw it in cgi-bin" app. Webapps also often have a lot of opportunities for speed improvements at the application level with caching and other strategies, so I worry less about the underlying libraries.
+
+I'd much prefer well-vetted to dependency free. I think the latter is an entirely false economy, and what we really need are much, much better installer tools.
+
+But these are just my priorities for the work I do most often. If I were working on an embedded data-crunching app, I'm sure my priorities would change quite a bit!
+
+I'd like to see people state their priorities up front, and explain why it's important for the work they do. Often this gets left out of the discussion. Without this information, we often end up just talking past each other.
