@@ -1,0 +1,31 @@
+
+
+Hi, there.
+
+It's an attempt to connect dots in the perl world in one place. It's NOT about abonding
+any services, but about bringing them together in one place. Our idea is not to duplicate
+services, but sync from them and sync back.
+
+Main thing we try to solve is problem with searching for appropriate solutions for your
+needs on the CPAN. It's growing tooo fast, so search.cpan.org is not enough. It's NOT
+another search in docs and names of cpan modules. It's search based on metadata, mainly
+tags. It's about relations between different modules, distributions, packages and out of
+the CPAN projects.
+
+Random documentation you can find in the doc/ dir. There is file with ideas that keeps
+growing, so you can start helping by implementing any or add more ideas.
+
+Be ready that this project depends on many modules from the CPAN and our goal is to use
+them as long as they suit our needs and even if they don't then first of all try to extend
+them.
+
+If you have a question like "Why do you use this? Why don't you use X instead of Y?"
+then you better stop right there before asking. That's it, you have high chances to
+be send frucking far.
+
+If you still have above question then just fork, replace whatever we use with another
+module and request github pull. Be ready to maintain your solution and help others
+understand benefits and how to use it in the best way.
+
+That's it for now. Join us and enjoy a journey into the perl world.
+
