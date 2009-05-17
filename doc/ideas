@@ -12,7 +12,8 @@ parse change log files, may be that will help normalize changelogs on cpan
 *** when modules declared as alternative, we can notify every author of a module
     that depends on any of alternatives to comment which one they prefer and why
 
-* relations should allow external URLs, for example Jifty is used in Doxory
+* relations should allow external URLs, for example Jifty is used in Doxory,
+  so relation should be like: x-local:///model/id, http://..., ftp://
 
 * we should check and complain about an author that mandatorly depend on Test::*
   modules
@@ -20,4 +21,15 @@ parse change log files, may be that will help normalize changelogs on cpan
 * if there is no repository declared in the META, we can allow users to define a
   repository and file bug in rt.cpan.org
 
+* we should integrate with sharifulin's service and force him to provide as API
+  for CPANID -> country bindings, may be we can contribute him back
+* I think we can make this people adjustable content and maintain ACME::CpanAuthors::*
+  namespace automatically, like sort of wiki.
+
+* SEE ALSO section of the POD
+** We should parse it
+** We should propagate people's announced relations back into the CPAN like
+   a patch that updates POD, for example when people add info that a module X
+   is an alternative for Y, we get list of all alternatives for both and generate
+   a SEE ALSO patch
 
