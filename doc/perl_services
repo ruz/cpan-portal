@@ -44,6 +44,9 @@ list of serivces around perl and we should integrate with many of them somehow:
 * http://svn.perl.org
 * http://www.cpanforum.com/
 ** grab discussions
+* http://ali.as/top100/
+** we can get all ratings and set
+   tags on distributions
 
 
 Here is design that can (should?) be used http://wardley.org/use.perl.org/test.html
