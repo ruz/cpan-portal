@@ -5,12 +5,12 @@ use utf8;
 
 =head1 NAME
 
-CpanPortal::Script - 
+CPAN::Portal::Script - 
 
 =cut
 
-package CpanPortal::Script::CPAN;
-use base 'CpanPortal::Script';
+package CPAN::Portal::Script::CPAN;
+use base 'CPAN::Portal::Script';
 
 sub file_path {
     my $self = shift;

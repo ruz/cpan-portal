@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 
-package CpanPortal;
+package CPAN::Portal;
 
 sub start {
     Jifty->web->add_javascript( qw(jquery.corner.js) );

@@ -3,8 +3,8 @@ use strict;
 use warnings;
 use utf8;
 
-package CpanPortal::Model::BugCollection;
-use base 'CpanPortal::Collection';
+package CPAN::Portal::Model::BugCollection;
+use base 'CPAN::Portal::Collection';
 
 sub from {
     my $self = shift;

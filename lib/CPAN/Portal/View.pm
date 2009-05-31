@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use utf8;
 
-package CpanPortal::View;
+package CPAN::Portal::View;
 use Jifty::View::Declare -base;
 
 template '/' => page {

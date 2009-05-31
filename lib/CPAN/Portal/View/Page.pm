@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 
-package CpanPortal::View::Page;
+package CPAN::Portal::View::Page;
 use base 'Jifty::Plugin::ViewDeclarePage::Page';
 use Jifty::View::Declare::Helpers;
 

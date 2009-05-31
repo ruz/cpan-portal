@@ -1,12 +1,12 @@
 use strict;
 use warnings;
 
-package CpanPortal::Model::Module;
+package CPAN::Portal::Model::Module;
 use Jifty::DBI::Schema;
 
 use Scalar::Util qw(blessed);
 
-use CpanPortal::Record schema {
+use CPAN::Portal::Record schema {
 # 2008-12-29 longest module has 96 characters
 column name =>
     type is 'varchar(127)',
@@ -17,18 +17,18 @@ column name =>
 
 column dist =>
     label is _('Distribution'),
-    refers_to CpanPortal::Model::Dist,
+    refers_to CPAN::Portal::Model::Dist,
     is mandatory,
 ;
 
 column maintship =>
-    refers_to CpanPortal::Model::MaintshipCollection
+    refers_to CPAN::Portal::Model::MaintshipCollection
         by 'module',
 ;
 
 
 column maintainers =>
-    refers_to CpanPortal::Model::AuthorCollection
+    refers_to CPAN::Portal::Model::AuthorCollection
         by tisql => 'maintainers.id = .maintship.author',
 ;
 

@@ -1,10 +1,10 @@
 use strict;
 use warnings;
 
-package CpanPortal::Model::WorkQueue;
+package CPAN::Portal::Model::WorkQueue;
 use Jifty::DBI::Schema;
 
-use CpanPortal::Record schema {
+use CPAN::Portal::Record schema {
 column type =>
     type is 'varchar(32)',
     is mandatory,

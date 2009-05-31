@@ -1,13 +1,13 @@
 use strict;
 use warnings;
 
-package CpanPortal::Model::BugsCounter;
+package CPAN::Portal::Model::BugsCounter;
 use Jifty::DBI::Schema;
 
-use CpanPortal::Record schema {
+use CPAN::Portal::Record schema {
 column dist =>
     label is _('Distribution'),
-    refers_to CpanPortal::Model::Dist,
+    refers_to CPAN::Portal::Model::Dist,
     is mandatory,
     is distinct,
 ;

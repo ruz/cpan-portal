@@ -1,10 +1,10 @@
 use strict;
 use warnings;
 
-package CpanPortal::Model::Author;
+package CPAN::Portal::Model::Author;
 use Jifty::DBI::Schema;
 
-use CpanPortal::Record schema {
+use CPAN::Portal::Record schema {
 column cpan =>
     type is 'varchar(64)',
     label is _('CPAN ID'),

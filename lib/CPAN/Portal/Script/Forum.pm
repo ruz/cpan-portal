@@ -5,12 +5,12 @@ use utf8;
 
 =head1 NAME
 
-CpanPortal::Script - 
+CPAN::Portal::Script - 
 
 =cut
 
-package CpanPortal::Script::Forum;
-use base 'CpanPortal::Script';
+package CPAN::Portal::Script::Forum;
+use base 'CPAN::Portal::Script';
 
 sub sync {
     my $self = shift;

@@ -1,19 +1,19 @@
 use strict;
 use warnings;
 
-package CpanPortal::Model::Maintship;
+package CPAN::Portal::Model::Maintship;
 use Jifty::DBI::Schema;
 
-use CpanPortal::Record schema {
+use CPAN::Portal::Record schema {
 column author =>
     label is _('Author'),
-    refers_to CpanPortal::Model::Author,
+    refers_to CPAN::Portal::Model::Author,
     is mandatory,
 ;
 
 column module =>
     label is _('Module'),
-    refers_to CpanPortal::Model::Module,
+    refers_to CPAN::Portal::Model::Module,
     is mandatory,
 ;
 

@@ -5,11 +5,11 @@ use utf8;
 
 =head1 NAME
 
-CpanPortal::Script - 
+CPAN::Portal::Script - 
 
 =cut
 
-package CpanPortal::Script;
+package CPAN::Portal::Script;
 
 use Email::Address;
 use List::Compare;

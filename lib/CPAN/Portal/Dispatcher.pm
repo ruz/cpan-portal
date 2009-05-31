@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use utf8;
 
-package CpanPortal::Dispatcher;
+package CPAN::Portal::Dispatcher;
 use Jifty::Dispatcher -base;
 
 on 'dist/*' => run {
