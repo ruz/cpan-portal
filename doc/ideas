@@ -33,3 +33,9 @@ parse change log files, may be that will help normalize changelogs on cpan
    is an alternative for Y, we get list of all alternatives for both and generate
    a SEE ALSO patch
 
+* about dependencies
+** carma++ for modules and authors that drop dependencies. for this we need event
+   queue, we collect dependencies trees for moduels that has been dropped during
+   last month in a distribution then collect the current one tree for the same
+   and substract.
+

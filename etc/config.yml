@@ -2,8 +2,8 @@
 framework: 
   ConfigFileVersion: 4
 
-  ApplicationClass: CpanPortal
-  ApplicationName: CpanPortal
+  ApplicationClass: CPAN::Portal
+  ApplicationName: CPAN-Portal
   ApplicationUUID: 3C21A588-D2E5-11DD-91FA-FC0F44A4CCFD
 
   AdminMode: 0
@@ -37,7 +37,7 @@ framework:
     Backend: Memcached
     Enable: ~
   SkipAccessControl: 1
-  TemplateClass: CpanPortal::View
+  TemplateClass: CPAN::Portal::View
   View: 
     FallbackHandler: Jifty::View::Declare::Handler
     Handlers: 
